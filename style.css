@@ -1,0 +1,36 @@
+* {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Assistant', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+}
+
+p {
+    color: #222;
+    font-size: 18px;
+}
+
+section {
+    padding: 3rem 0;
+    /* border: 1px solid rebeccapurple;     */
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    /* border: 1px solid hotpink; */
+}
+
+
+#pizzadoggo {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    /* transform-origin: center; */
+    /* transform: rotate(35deg); */
+}

@@ -1,0 +1,22 @@
+{
+  "name": "philedius.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philedius/philedius.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philedius/philedius.github.io/issues"
+  },
+  "homepage": "https://github.com/philedius/philedius.github.io#readme",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
