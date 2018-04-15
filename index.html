@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117525601-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-117525601-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117525601-1');
     </script>
 
     <meta charset="UTF-8">
@@ -42,13 +46,12 @@
             margin: 1rem 1.5rem;
             cursor: default;
             user-select: none;
-            /* opacity: 0; */
             transition: opacity .1s ease-in-out;
+            color: white;
         }
 
         .section-primary h1 {
             background: rgb(12, 56, 94);
-            color: white;
         }
 
         .section-secondary h1 {
@@ -68,28 +71,44 @@
 <body>
     <section class="section-primary">
         <div class="content">
-            <h1>Hello there. This is my website.</h1>
+            <h1>Hello there.</h1>
         </div>
 
     </section>
 
     <section class="section-secondary">
-            <div class="content">
-                <h1 class="reveal">There is nothing here at the moment.</h1>
-            </div>
+        <div class="content">
+            <h1 class="reveal">I'm Fannar.</h1>
+        </div>
     </section>
 
     <section class="section-primary">
-            <div class="content">
-                <h1 class="reveal">Sorry.</h1>
-            </div>
-        </section>
+        <div class="content">
+            <h1 class="reveal">This is my website.</h1>
+        </div>
+
+    </section>
+
+    <section class="section-secondary">
+        <div class="content">
+            <h1 class="reveal">There is nothing here at the moment.</h1>
+        </div>
+    </section>
+
+    <section class="section-primary">
+        <div class="content">
+            <h1 class="reveal">Sorry.</h1>
+        </div>
+    </section>
 </body>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 <script>
     window.sr = ScrollReveal();
-    sr.reveal('.reveal', { delay: 200, duration: 300 });
-
+    sr.reveal('.reveal', {
+        delay: 200,
+        duration: 400
+    });
 </script>
+
 </html>
