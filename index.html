@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117525601-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117525601-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">   
-    <title>Fannar Freyr</title>
+    <title>👌</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+        html {
+            font-family: 'Lato';
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .content h1 {
+            font-size: 80px;
+            padding: 1rem 2rem;
+            margin: 1rem 1.5rem;
+            cursor: default;
+            user-select: none;
+            /* opacity: 0; */
+            transition: opacity .1s ease-in-out;
+        }
+
+        .section-primary h1 {
+            background: rgb(12, 56, 94);
+            color: white;
+        }
+
+        .section-secondary h1 {
+            background: rgb(229, 43, 87);
+        }
+
+        .section-primary {
+            background: rgb(229, 43, 87);
+        }
+
+        .section-secondary {
+            background: rgb(12, 56, 94);
+        }
+    </style>
 </head>
+
 <body>
-    <nav id="nav">
-        <h1>wow such website</h1>
-    </nav>
-    <section>
-        <article>
-            <h1>Welcome</h1>
-            <p>to zombocom</p>
-            <img src="http://i.imgur.com/Zz3OUzh.jpg" alt="" srcset="">
-            <img id="pizzadoggo" src="http://animatedpizzagifs.com/images/pizza-frenchie-dog.gif" alt="" srcset="">
-        </article>
+    <section class="section-primary">
+        <div class="content">
+            <h1>Hello there. This is my website.</h1>
+        </div>
     </section>
+
+    <section class="section-secondary">
+            <div class="content">
+                <h1 class="reveal">There is nothing here at the moment.</h1>
+            </div>
+    </section>
+
+    <section class="section-primary">
+            <div class="content">
+                <h1 class="reveal">Sorry.</h1>
+            </div>
+        </section>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 <script>
-    var rotation = 1;
-    function rotateDoggo() {
-        $('#pizzadoggo').css('transform', 'rotate(' + rotation + 'deg)');
-        rotation += .1;
-        window.setTimeout(function() {
-          rotateDoggo();
-        }, 1000 / 60);
-    }
-
-    rotateDoggo();
-
-    
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal', { delay: 200, duration: 300 });
 </script>
 </html>
